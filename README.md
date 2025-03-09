@@ -1,19 +1,18 @@
-Name: Gabriella (Gabi) Bekhrad
-Email: gbekhrad@chapman.edu
-ID: 2417841
+# Contiguous Memory Allocation
 
-Title of Assignment: Programming Assignment 5 - Contiguous Memory Allocation
+Gabriella (Gabi) Bekhrad  
+gabimbek@gmail.com
 
-Overview/Source Files:
+## Overview/Source Files:
 - allocator.c: C program managing a contiguous region of memory of given size, using different allocation strategies and keeping track of memory usage. Allows user to request, release, and compact memory using commands processed by the program.
 
-To compile:
+## To compile:
 gcc allocator.c -o allocator
 
-To run:
+## To run:
 ./allocator <initial amount of memory to allocate>
 
-Commands (sample commands):
+### Commands (sample commands):
 - Request memory: RQ <process_name> <size> <strategy>
     - For <strategy>: B (best-fit), F (first-fit), W (worst-fit)
 - Release memory: RL <process_name>
@@ -21,7 +20,7 @@ Commands (sample commands):
 - Compact memory: C
 - Exit: X
 
-Sample Input/Output: 
+## Sample Input/Output: 
 ./allocator 1000
 allocator>RQ p1 200 F
 Allocated 200 bytes for process p1 using F strategy.
@@ -52,7 +51,7 @@ Addresses [480:999] Unused
 allocator>X
 *program terminates*
 
-Sources:
+## Sources:
 - https://stackoverflow.com/questions/67994197/how-do-i-define-a-struct-and-properly-allocate-memory-for-it-in-c
 - https://www.geeksforgeeks.org/malloc-and-free-in-c/
 - https://chatgpt.com/ (for debugging purposes)
